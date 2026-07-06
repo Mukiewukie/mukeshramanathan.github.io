@@ -7,19 +7,19 @@ import { contactLinks, experienceHighlights, projects } from "@/data/portfolio";
 
 export default function Home() {
   return (
-    <div className="min-h-screen bg-[radial-gradient(circle_at_top_left,_rgba(15,23,42,0.04),_transparent_35%)] text-slate-700">
+    <div className="min-h-screen bg-[radial-gradient(circle_at_top_left,_rgba(15,23,42,0.04),_transparent_35%)] text-slate-900 dark:text-slate-100 dark:bg-slate-950 dark:bg-[radial-gradient(circle_at_top_left,_rgba(148,163,184,0.12),_transparent_35%)]">
       <NavBar />
       <main id="home" className="mx-auto flex max-w-6xl flex-col gap-20 px-6 py-16 lg:px-8 lg:py-24">
-        <section className="grid items-center gap-10 rounded-3xl border border-slate-200 bg-white/80 p-8 shadow-sm shadow-slate-200/70 backdrop-blur md:grid-cols-[1.2fr_0.8fr] md:p-12">
+        <section className="grid items-center gap-10 rounded-3xl border border-slate-200 bg-white/80 p-8 shadow-sm shadow-slate-200/70 backdrop-blur dark:border-slate-700 dark:bg-slate-950/80 md:grid-cols-[1.2fr_0.8fr] md:p-12">
           <div className="space-y-6">
-            <div className="inline-flex rounded-full border border-slate-200 bg-slate-50 px-3 py-1 text-sm font-medium text-slate-600">
+            <div className="inline-flex rounded-full border border-slate-200 bg-slate-100 px-3 py-1 text-sm font-medium text-slate-900 dark:border-slate-600 dark:bg-slate-800 dark:text-slate-100">
               Electrical Engineering / Robotics Student
             </div>
             <div className="space-y-4">
-              <h1 className="text-4xl font-semibold tracking-tight text-slate-950 sm:text-5xl">
+              <h1 className="text-4xl font-semibold tracking-tight text-slate-950 dark:text-slate-100 sm:text-5xl">
                 Hi, I’m Mukesh Ramanathan.
               </h1>
-              <p className="max-w-2xl text-lg leading-8 text-slate-600">
+              <p className="max-w-2xl text-lg leading-8 text-slate-700 dark:text-slate-200">
                 I’m an engineering student focused on robotics, embedded systems,
                 and building practical tools that turn ideas into reliable hardware
                 and software.
@@ -28,13 +28,13 @@ export default function Home() {
             <div className="flex flex-wrap gap-3">
               <a
                 href="#projects"
-                className="rounded-full bg-slate-900 px-5 py-3 text-sm font-medium text-white transition hover:bg-slate-700"
+                className="rounded-full border border-slate-300 px-5 py-3 text-sm font-medium text-slate-700 transition hover:border-slate-900 hover:text-slate-900 dark:border-slate-600 dark:text-slate-200 dark:hover:border-slate-400 dark:hover:text-white"
               >
                 Explore Projects
               </a>
               <a
                 href="#contact"
-                className="rounded-full border border-slate-300 px-5 py-3 text-sm font-medium text-slate-700 transition hover:border-slate-900 hover:text-slate-900"
+                className="rounded-full border border-slate-300 px-5 py-3 text-sm font-medium text-slate-700 transition hover:border-slate-900 hover:text-slate-900 dark:border-slate-600 dark:text-slate-200 dark:hover:border-slate-400 dark:hover:text-white"
               >
                 Let’s Connect
               </a>
@@ -62,16 +62,16 @@ export default function Home() {
 
         <Section id="about" eyebrow="About" title="Engineering mindset, thoughtful execution">
           <div className="grid gap-6 md:grid-cols-2">
-            <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
-              <h3 className="text-xl font-semibold text-slate-900">What I do</h3>
-              <p className="mt-3 text-sm leading-7 text-slate-600">
+            <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm dark:border-slate-700 dark:bg-slate-900">
+              <h3 className="text-xl font-semibold text-slate-900 dark:text-white">What I do</h3>
+              <p className="mt-3 text-sm leading-7 text-slate-600 dark:text-slate-200">
                 I combine electrical engineering fundamentals with robotics and software
                 experimentation to create systems that are both functional and elegant.
               </p>
             </div>
-            <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
-              <h3 className="text-xl font-semibold text-slate-900">Current focus</h3>
-              <p className="mt-3 text-sm leading-7 text-slate-600">
+            <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm dark:border-slate-700 dark:bg-slate-900">
+              <h3 className="text-xl font-semibold text-slate-900 dark:text-white">Current focus</h3>
+              <p className="mt-3 text-sm leading-7 text-slate-600 dark:text-slate-200">
                 Building reliable prototypes, improving control workflows, and learning
                 how to communicate technical progress clearly in collaborative teams.
               </p>
@@ -86,9 +86,9 @@ export default function Home() {
         <Section id="experience" eyebrow="Robotics / Engineering Experience" title="Leadership and technical depth">
           <div className="grid gap-6 md:grid-cols-3">
             {experienceHighlights.map((item) => (
-              <div key={item.title} className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm">
-                <h3 className="text-xl font-semibold text-slate-900">{item.title}</h3>
-                <p className="mt-3 text-sm leading-7 text-slate-600">{item.description}</p>
+              <div key={item.title} className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm dark:border-slate-700 dark:bg-slate-900">
+                <h3 className="text-xl font-semibold text-slate-900 dark:text-white">{item.title}</h3>
+                <p className="mt-3 text-sm leading-7 text-slate-600 dark:text-slate-200">{item.description}</p>
               </div>
             ))}
           </div>
