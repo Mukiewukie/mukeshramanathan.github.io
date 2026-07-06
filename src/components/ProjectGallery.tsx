@@ -21,7 +21,7 @@ export function ProjectGallery({ projects }: ProjectGalleryProps) {
             key={project.title}
             className="group rounded-2xl border border-slate-200 bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg"
           >
-            {project.image ? (
+            {project.title !== "Discord Bot Development" && project.image ? (
               <button
                 type="button"
                 onClick={() => {
@@ -51,13 +51,23 @@ export function ProjectGallery({ projects }: ProjectGalleryProps) {
                 </span>
               ))}
             </div>
-            {project.video ? (
-              <div className="mt-6 overflow-hidden rounded-2xl border border-slate-200 bg-slate-50">
-                <video controls className="w-full" muted>
-                  <source src={project.video} type="video/quicktime" />
-                  Your browser does not support the video tag.
-                </video>
-              </div>
+            {project.title === "Discord Bot Development" && project.image ? (
+              <button
+                type="button"
+                onClick={() => {
+                  setActiveImage(project.image ?? null);
+                  setActiveTitle(project.title);
+                }}
+                className="mt-6 overflow-hidden rounded-xl border border-slate-200 text-left"
+              >
+                <Image
+                  src={project.image}
+                  alt={project.title}
+                  width={600}
+                  height={320}
+                  className="h-36 w-full object-cover transition duration-300 group-hover:scale-105"
+                />
+              </button>
             ) : null}
             {project.link ? (
               <Link

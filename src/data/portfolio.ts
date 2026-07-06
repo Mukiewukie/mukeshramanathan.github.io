@@ -4,7 +4,6 @@ export interface Project {
   stack: string[];
   link?: string;
   image?: string;
-  video?: string;
 }
 
 export interface Highlight {
@@ -32,7 +31,6 @@ export const projects: Project[] = [
       "As a Software Engineering Intern at Qualizeal, an AI-powered company that unifies and streamlines software testing through integrated execution, planning, governance, and reporting, I developed and created a full-functioning website that incorporates frontend and backend as well as deep learning algorithms, SMOTE,  and Convolutional Neural Networks to successfully predict the emotions of an individual based on their Electroencephalogram data.",
     stack: ["Embedded Systems", "Python", "CNN", "Deep Learning"],
     link: "https://github.com/Mukiewukie/EEG-Processing-Site-Internship",
-    video: "/videos/discord-bot.mov",
   },
   {
     title: "Discord Bot Development",
