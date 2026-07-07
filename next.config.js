@@ -1,11 +1,12 @@
 const nextConfig = {
   output: "export",
+  trailingSlash: true,
 
   images: {
     unoptimized: true,
   },
 
-  trailingSlash: true,
+  assetPrefix: "./",
 };
 
 module.exports = nextConfig;

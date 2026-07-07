@@ -44,7 +44,7 @@ export default function Home() {
           <div className="rounded-2xl border border-slate-200 bg-slate-950 p-6 text-slate-100 shadow-lg">
             <div className="overflow-hidden rounded-2xl border border-slate-800 bg-slate-950">
               <Image
-                src="/images/profile.jpg"
+                src="./images/profile.jpg"
                 alt="Profile photo"
                 width={600}
                 height={420}
