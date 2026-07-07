@@ -33,5 +33,23 @@ jobs:
         with:
           path: ./out
 
+      - name: Ensure GitHub Pages enabled
+        uses: actions/github-script@v6
+        with:
+          script: |
+            const owner = context.repo.owner;
+            const repo = context.repo.repo;
+            try {
+              await github.request('GET /repos/{owner}/{repo}/pages', { owner, repo });
+              core.info('GitHub Pages already enabled for this repository.');
+            } catch (err) {
+              core.info('GitHub Pages not found; enabling Pages using the main branch.');
+              await github.request('POST /repos/{owner}/{repo}/pages', {
+                owner,
+                repo,
+                source: { branch: 'main', path: '/' }
+              });
+            }
+
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v4
