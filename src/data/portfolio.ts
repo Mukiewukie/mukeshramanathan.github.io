@@ -24,7 +24,7 @@ export const projects: Project[] = [
     description:
       "Led mechanical and systems design efforts for engineering-based Science Olympiad events, managing fabrication, testing, and iteration under time constraints.",
     stack: ["CAD", "Prototyping", "Mechanical Design", "Engineering Design Process"],
-    image: "/images/Helicopter-2025-Image.jpg",
+    image: "public/images/Helicopter-2025-Image.jpg",
   },
   {
     title: "Software Engineering Internship",
@@ -38,7 +38,7 @@ export const projects: Project[] = [
     description:
       "Designed and implemented a Discord bot with custom commands and integrations, enhancing community engagement and automating routine tasks with Electrical Engineering knowledge.",
     stack: ["Python", "Discord API", "Asyncio"],
-    image: "/images/discord-bot-screenshot.png",
+    image: "public/images/discord-bot-screenshot.png",
   },
   {
     title: "AI Workforce Mobility Navigator",
