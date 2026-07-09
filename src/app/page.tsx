@@ -80,7 +80,7 @@ export default function Home() {
               <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm dark:border-slate-700">
                 <Image
                   src="/images/DSC_3879.jpg"
-                  alt="About image 1"
+                  alt=""
                   width={800}
                   height={533}
                   className="w-full h-48 object-cover"
@@ -90,7 +90,7 @@ export default function Home() {
               <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm dark:border-slate-700">
                 <Image
                   src="/images/1774531076220.jpg"
-                  alt="About image 2"
+                  alt=""
                   width={800}
                   height={533}
                   className="w-full h-48 object-cover"
