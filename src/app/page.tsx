@@ -75,6 +75,28 @@ export default function Home() {
               </p>
             </div>
           </div>
+            {/* Image slots below the about text */}
+            <div className="mt-6 grid gap-4 sm:grid-cols-2">
+              <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm dark:border-slate-700">
+                <Image
+                  src="/images/DSC_3879.jpg"
+                  alt="About image 1"
+                  width={800}
+                  height={533}
+                  className="w-full h-48 object-cover"
+                />
+              </div>
+
+              <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm dark:border-slate-700">
+                <Image
+                  src="/images/1774531076220.jpg"
+                  alt="About image 2"
+                  width={800}
+                  height={533}
+                  className="w-full h-48 object-cover"
+                />
+              </div>
+            </div>
         </Section>
 
         <Section id="projects" eyebrow="Projects" title="Selected work">
