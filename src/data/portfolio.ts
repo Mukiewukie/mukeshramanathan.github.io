@@ -84,7 +84,7 @@ export const experienceHighlights: Highlight[] = [
   {
     title: "Leadership in Technical Teams",
     description:
-      "Founded and helped lead student clubs, coordinating design planning, mentorship, and technical execution across team members.",
+      "Founded and helped lead student clubs, coordinating design planning, mentorship, and technical execution across peers.",
   },
   {
     title: "Robotics Systems Integration",
@@ -94,12 +94,12 @@ export const experienceHighlights: Highlight[] = [
   {
     title: "Competitive STEM Experience",
     description:
-      "Participated in structured STEM competitions (robotics, hackathons, and science olympiad), focusing on iterative design, testing, and performance optimization.",
+      "Participated in structured STEM competitions (robotics, hackathons, and Science Olympiad), focusing on iterative design, testing, and performance optimization.",
   },
   {
     title: "Communication & Advocacy (Model UN)",
     description:
-      "Developed structured communication and analytical reasoning skills through Model United Nations, including research-driven debate and leadership roles.",
+      "Developed strong communication and analytical skills through Model United Nations, including research-driven debate and leadership roles.",
   },
 ];
 

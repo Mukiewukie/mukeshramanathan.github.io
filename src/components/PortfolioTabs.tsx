@@ -41,7 +41,7 @@ export function PortfolioTabs() {
               <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm dark:border-slate-700 dark:bg-slate-900">
                 <h3 className="text-xl font-semibold text-slate-900 dark:text-white">What I do</h3>
                 <p className="mt-3 text-sm leading-7 text-slate-600 dark:text-slate-200">
-                  I combine electrical engineering fundamentals with robotics and software experimentation to create systems that are both functional and elegant.
+                    I work with electrical engineering fundamentals, robotics, and software experimentation to create systems that are both functional and aesthetically pleasing.
                 </p>
               </div>
               <div className="rounded-2xl border border-slate-200 bg-white p-6 shadow-sm dark:border-slate-700 dark:bg-slate-900">
@@ -77,7 +77,7 @@ export function PortfolioTabs() {
           <Section id="contact" eyebrow="Contact" title="Let’s build something impactful">
             <div className="rounded-2xl border border-slate-200 bg-slate-900 p-8 text-slate-100 shadow-sm">
               <p className="max-w-2xl text-sm leading-7 text-slate-300">
-                I’m interested in robotics, embedded systems, and collaborative engineering work. Feel free to reach out for projects, internships, or conversations about building better tools.
+                I’m interested in robotics, embedded systems, and collaborative engineering work. Feel free to reach out! I’m always open for conversations about building better products.
               </p>
               <div className="mt-6 flex flex-wrap gap-3">
                 {contactLinks.map((link) => (
