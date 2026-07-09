@@ -4,6 +4,9 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Mukesh Ramanathan | Portfolio",
   description: "Portfolio website for an electrical engineering and robotics student.",
+  icons: {
+    icon: "/favicon.svg",
+  },
 };
 
 export default function RootLayout({
