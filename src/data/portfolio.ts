@@ -78,6 +78,19 @@ export const projects: Project[] = [
     ],
     link: "https://github.com/qwertycloudhub/hyperion-space-app",
   },
+  {
+    title: "Aid Compass",
+    description:
+      "A conversational web app that guides North Carolina disaster victims through every federal, state, and local aid program they qualify for, featuring AI-powered intake, personalized aid dashboards, document checklists, deadline tracking, and FEMA case explainers to simplify disaster recovery navigation.",
+    stack: [
+      "Next.js",
+      "Claude API",
+      "Firebase",
+      "Firestore",
+      "Resend",
+    ],
+    link: "https://github.com/quadruple-t/cac-2026",
+  },
 ];
 
 export const experienceHighlights: Highlight[] = [
